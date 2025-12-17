@@ -1,0 +1,109 @@
+/* * styles.css v2
+ * ---
+ * Custom styles and utility classes not directly handled by Tailwind CSS.
+ * Using CSS variables for smooth transition between light/dark mode themes.
+ */
+
+:root {
+    /* Light Mode Defaults */
+    --color-bg: #f9fafb; /* gray-50 */
+    --color-card-bg: #ffffff; /* white */
+    --color-text: #1f2937; /* gray-900 */
+    --color-text-secondary: #4b5563; /* gray-600 */
+    --color-border: #e9d5ff; /* purple-200 */
+    --color-accent: #9333ea; /* purple-600 */
+    --color-accent-bg: #f3e8ff; /* purple-50 */
+    --gradient-start: #9333ea; /* purple-600 */
+    --gradient-end: #ec4899; /* pink-600 */
+    --nav-bg: 255, 255, 255; /* RGB for white */
+}
+
+[data-theme='dark'] {
+    /* Dark Mode Overrides */
+    --color-bg: #111827; /* gray-900 */
+    --color-card-bg: #1f2937; /* gray-800 */
+    --color-text: #ffffff; /* white */
+    --color-text-secondary: #9ca3af; /* gray-400 */
+    --color-border: #5b21b6; /* purple-800 */
+    --color-accent: #c084fc; /* purple-400 */
+    --color-accent-bg: rgba(167, 139, 250, 0.2); /* purple-900/20 */
+    --gradient-start: #c084fc; /* purple-400 */
+    --gradient-end: #f472b6; /* pink-400 */
+    --nav-bg: 17, 24, 35; /* RGB for gray-900 */
+}
+
+body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    transition: background-color 0.3s, color 0.3s;
+    scroll-behavior: smooth;
+}
+
+/* Base custom classes to apply CSS variables */
+.theme-bg {
+    background-color: var(--color-bg);
+}
+.theme-card-bg {
+    background-color: var(--color-card-bg);
+}
+.theme-text {
+    color: var(--color-text);
+}
+.theme-text-secondary {
+    color: var(--color-text-secondary);
+}
+.theme-border {
+    border-color: var(--color-border);
+}
+.theme-accent {
+    color: var(--color-accent);
+}
+.theme-accent-bg {
+    background-color: var(--color-accent-bg);
+}
+/* ADDED: Nav background class using RGB variable for transparency */
+.nav-bar-bg {
+    background-color: rgba(var(--nav-bg), 0.8);
+}
+
+/* Custom Tailwind utility overrides */
+.bg-gradient-primary {
+    background-image: linear-gradient(to right, var(--gradient-start), var(--gradient-end));
+}
+.text-gradient-primary {
+    background-image: linear-gradient(to right, var(--gradient-start), var(--gradient-end));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.nav-link.active {
+    color: var(--color-accent) !important;
+}
+.nav-link.active::after {
+    width: 100% !important;
+}
+
+/* Custom scrollbar for a touch of polish */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: var(--color-bg);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--color-accent);
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--gradient-end);
+}
+
+/* Fade-in animation for snappy loading */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.fade-in.appear {
+    opacity: 1;
+    transform: translateY(0);
+}

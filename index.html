@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chitresh Sharma - VLSI & Embedded Systems Engineer</title>
+    <link rel="icon" type="image/png" href="https://via.placeholder.com/32/9333ea/ffffff?text=CS">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'custom-bg': 'var(--color-bg)',
+                        'custom-card-bg': 'var(--color-card-bg)',
+                        'custom-text': 'var(--color-text)',
+                        'custom-accent': 'var(--color-accent)',
+                        'custom-accent-bg': 'var(--color-accent-bg)',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans antialiased theme-bg theme-text transition-colors duration-300">
+
+    <nav id="navbar" class="fixed top-0 w-full z-40 backdrop-blur-xl nav-bar-bg border-b theme-border transition-colors duration-300">
+        <div class="max-w-7xl mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="#hero" class="text-xl font-black text-gradient-primary hover:scale-105 transition-transform">
+                    Chitresh Sharma
+                </a>
+                
+                <div id="desktop-nav" class="hidden md:flex items-center gap-8">
+                    </div>
+
+                <div class="md:hidden flex items-center gap-4">
+                    <button id="theme-toggle-mobile" class="p-2 rounded-full theme-accent-bg theme-accent">
+                        <i data-lucide="moon" size="20"></i>
+                    </button>
+                    <button id="mobile-menu-button" class="theme-accent"> 
+                        <i data-lucide="menu" size="24" id="menu-icon"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4 space-y-4">
+                </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="hero" class="min-h-screen flex items-center justify-center relative px-6 pt-20">
+            <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center fade-in">
+                <div class="space-y-6 md:order-1">
+                    <p class="text-xl theme-text font-medium">Hello, I'm</p>
+
+                    <h1 class="text-7xl md:text-8xl font-black leading-tight text-gradient-primary">
+                        Chitresh Sharma
+                    </h1>
+                    
+                    <h2 id="hero-role" class="text-2xl font-semibold theme-text">
+                        </h2>
+
+                    <div id="availability-flag" class="px-4 py-2 rounded-full theme-accent-bg theme-accent text-sm font-medium w-fit mt-4">
+                        </div>
+
+                    <div class="flex flex-col sm:flex-row gap-4 pt-8">
+                        <a href="#projects" class="px-8 py-4 bg-gradient-primary text-white rounded-lg font-semibold shadow-lg shadow-purple-500/30 hover:shadow-xl hover:shadow-purple-500/50 transition-all transform hover:scale-[1.02]">
+                            Explore My Silicon Work
+                        </a>
+                        <a href="assets/documents/Chitresh_Sharma_Resume.pdf" download="Chitresh_Sharma_Resume.pdf" class="px-8 py-4 border-2 theme-border rounded-lg font-semibold hover:theme-accent-bg transition-all theme-text-secondary hover:theme-accent flex items-center gap-2">
+                             <i data-lucide="file-text" size="20"></i> Download Resume
+                        </a>
+                    </div>
+
+                    <div id="social-links-hero" class="flex gap-4 pt-4">
+                        </div>
+                </div>
+
+                <div class="relative flex justify-center md:order-2">
+                    <div class="absolute inset-0 bg-gradient-primary rounded-full blur-3xl opacity-20 w-full h-full"></div>
+                    <img
+                        src="assets/images/about-me.jpg" 
+                        alt="Chitresh Sharma Profile"
+                        class="relative rounded-full shadow-2xl w-full max-w-md h-auto object-cover aspect-square border-8 theme-card-bg transition-transform duration-500"
+                    />
+                </div>
+            </div>
+
+            <a href="#about" class="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce theme-accent">
+                <i data-lucide="chevron-down" size="32"></i>
+            </a>
+        </section>
+
+
+	<section id="about" class="py-24 px-6">
+            <div class="max-w-6xl mx-auto fade-in">
+                <h2 class="text-5xl font-bold mb-16 text-center text-gradient-primary">
+                    About Me
+                </h2>
+
+                <div class="grid md:grid-cols-2 gap-12 items-start">
+                    
+                    <div class="md:col-span-2 space-y-8 mb-8">
+                        <h3 class="text-2xl font-bold text-center theme-accent md:text-left">
+                            My Journey Highlights
+                        </h3>
+                        <div id="journey-highlights" class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                            </div>
+                    </div>
+                    
+                    <div class="space-y-6">
+                        <div class="p-8 rounded-2xl theme-card-bg border theme-border shadow-lg">
+                            <h3 id="about-name" class="text-2xl font-bold mb-4 theme-accent">
+                                </h3>
+                            <p id="about-role" class="theme-text-secondary leading-relaxed text-lg mb-4">
+                                </p>
+                            <p id="bio-summary" class="theme-text-secondary leading-relaxed">
+                                </p>
+                        </div>
+
+                        <div id="about-stats" class="grid grid-cols-2 gap-4">
+                            </div>
+                    </div>
+                    
+                    <div class="space-y-6">
+                        <h3 class="text-2xl font-bold theme-accent">
+                            Core Technical Skills
+                        </h3>
+                        <div id="skills-grid-preview" class="space-y-4">
+                            </div>
+                        <a href="#skills" class="block w-full text-center px-4 py-3 theme-accent-bg theme-accent rounded-lg font-semibold hover:scale-[1.01] transition-transform">
+                            View All Skills
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="projects" class="py-24 px-6">
+            <div class="max-w-7xl mx-auto fade-in">
+                <h2 class="text-5xl font-bold mb-16 text-center text-gradient-primary">
+                    Featured Projects
+                </h2>
+                <div id="projects-grid" class="grid md:grid-cols-2 gap-8">
+                    </div>
+            </div>
+        </section>
+
+        <section id="achievements" class="py-24 px-6">
+            <div class="max-w-6xl mx-auto fade-in">
+                <h2 class="text-5xl font-bold mb-16 text-center text-gradient-primary">
+                    Achievements & Credentials
+                </h2>
+                <div id="achievements-grid" class="grid md:grid-cols-2 gap-6">
+                    </div>
+            </div>
+        </section>
+
+        <section id="skills" class="py-24 px-6">
+            <div class="max-w-5xl mx-auto fade-in">
+                <h2 class="text-5xl font-bold mb-16 text-center text-gradient-primary">
+                    Technical Expertise
+                </h2>
+                <div id="skills-grid" class="grid md:grid-cols-2 gap-8">
+                    </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="py-24 px-6">
+            <div class="max-w-5xl mx-auto fade-in">
+                <h2 class="text-5xl font-bold mb-16 text-center text-gradient-primary">
+                    What Others Say
+                </h2>
+                <div id="testimonials-grid" class="grid md:grid-cols-2 gap-8">
+                    </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-24 px-6">
+            <div class="max-w-3xl mx-auto fade-in">
+                <h2 class="text-5xl font-bold mb-8 text-center text-gradient-primary">
+                    Let's Build Something Amazing
+                </h2>
+                
+                <p class="text-center theme-text-secondary mb-12 text-lg">
+                    Ready to accelerate your next hardware innovation? Let's discuss your project needs.
+                </p>
+
+                <form 
+    id="contact-form" 
+    action="https://script.google.com/macros/s/AKfycbyH9Z3UkgLf3jM4HEmJZi7EdHXI_bGLIAnh3XIr7l00grk5N2ropGuBtvspJmAgM5FJ/exec" 
+    method="POST" 
+    class="p-8 rounded-2xl theme-card-bg border theme-border shadow-xl space-y-6"
+>
+    <input
+        type="text"
+        placeholder="Your Name"
+        name="name" required
+        class="w-full px-6 py-4 theme-card-bg border theme-border rounded-lg focus:ring-2 focus:ring-custom-accent focus:outline-none theme-text transition-all duration-300"
+    />
+    <input
+        type="email"
+        placeholder="Your Email"
+        name="email" required
+        class="w-full px-6 py-4 theme-card-bg border theme-border rounded-lg focus:ring-2 focus:ring-custom-accent focus:outline-none theme-text transition-all duration-300"
+    />
+    <textarea
+        rows="6"
+        placeholder="Your Message"
+        name="message" required
+        class="w-full px-6 py-4 theme-card-bg border theme-border rounded-lg focus:ring-2 focus:ring-custom-accent focus:outline-none resize-none theme-text transition-all duration-300"
+    ></textarea>
+    
+    <button
+        type="submit"
+        class="w-full px-8 py-4 bg-gradient-primary text-white rounded-lg font-semibold shadow-lg hover:shadow-xl transition-all transform hover:scale-[1.01]"
+    >
+        Send Message
+    </button>
+    <p id="contact-status" class="text-center text-sm theme-accent hidden"></p>
+</form>
+
+                <div id="social-links-contact" class="flex gap-6 justify-center mt-8">
+                    </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-8 px-6 border-t theme-border text-center theme-text-secondary transition-colors duration-300">
+        <p id="footer-text">
+            </p>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
