@@ -70,11 +70,11 @@
 
                     <div class="flex flex-col sm:flex-row gap-4 pt-8">
                         <a href="#projects" class="px-8 py-4 bg-gradient-primary text-white rounded-lg font-semibold shadow-lg shadow-purple-500/30 hover:shadow-xl hover:shadow-purple-500/50 transition-all transform hover:scale-[1.02]">
-                            Explore My Silicon Work
+                            Explore My Work
                         </a>
-                        <a href="assets/documents/Chitresh_Sharma_Resume.pdf" download="Chitresh_Sharma_Resume.pdf" class="px-8 py-4 border-2 theme-border rounded-lg font-semibold hover:theme-accent-bg transition-all theme-text-secondary hover:theme-accent flex items-center gap-2">
-                             <i data-lucide="file-text" size="20"></i> Download Resume
-                        </a>
+                        <a href="assets/documents/Chitresh_Sharma_Resume.pdf" target="_blank" class="px-8 py-4 border-2 theme-border rounded-lg font-semibold hover:theme-accent-bg transition-all theme-text-secondary hover:theme-accent flex items-center gap-2">
+     <i data-lucide="file-text" size="20"></i> View Resume
+</a>
                     </div>
 
                     <div id="social-links-hero" class="flex gap-4 pt-4">
@@ -236,8 +236,11 @@
         <p id="footer-text">
             </p>
     </footer>
-
+    <button id="back-to-top" class="fixed bottom-8 right-8 p-3 rounded-full bg-gradient-primary text-white shadow-lg opacity-0 translate-y-10 pointer-events-none transition-all duration-300 hover:scale-110 z-50 focus:outline-none" onclick="window.scrollToSection('hero')">
+    <i data-lucide="arrow-up" size="20"></i>
+    </button>
     <script src="data.js"></script>
     <script src="script.js"></script>
+	
 </body>
 </html>
