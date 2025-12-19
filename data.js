@@ -8,9 +8,9 @@ const portfolioData = {
     personalInfo: {
         name: "Chitresh Sharma",
         tagline: "Bridging the gap between software logic and silicon performance.",
-        role: "Aspiring VLSI & Embedded Systems Engineer | RTL Design & FPGA Prototyping Expert",
+        role: "Aspiring VLSI & Embedded Systems Engineer | RTL Design & FPGA Prototyping",
         email: "chitreshsharma2311@gmail.com",
-        githubURL: "https://github.com/YourGitHubUsername",
+        githubURL: "https://github.com/Chitreshsharma23",
         linkedinURL: "https://www.linkedin.com/in/chitresh-sharma-electronics",
         // REMOVED: twitterURL
         
@@ -26,7 +26,7 @@ const portfolioData = {
     ],
 
     aboutMe: {
-        bioSummary: `I'm Chitresh Sharma, an aspiring **VLSI and Embedded Systems Engineer** dedicated to creating robust and efficient hardware solutions. My technical expertise lies in **RTL Design (Verilog)**, **FPGA prototyping (Xilinx Vivado)**, and **Embedded C programming**. I am currently pursuing my B.Tech in ECE with a strong academic standing (9.24 CGPA). Beyond the lab, I bring proven leadership from organizing large-scale events and leading media teams, ensuring projects are not just technically sound, but also well-coordinated and impactful.`,
+        bioSummary: `I'm Chitresh Sharma, an aspiring **VLSI and Embedded Systems Engineer** dedicated to creating robust and efficient hardware solutions. My technical expertise lies in **RTL Design (Verilog)**, **FPGA prototyping (Xilinx Vivado)**, and **Embedded C programming**. I am currently pursuing my B.Tech in ECE with a strong academic standing. Beyond the lab, I bring proven leadership from organizing large-scale events and leading media teams, ensuring projects are not just technically sound, but also well-coordinated and impactful.`,
         keyStats: [
             //{ value: "9.24", unit: "CGPA" },
             //{ value: "1 Month", unit: "VLSI Internship" }
@@ -62,9 +62,9 @@ const portfolioData = {
         { label: "View Certificate", url: "assets/documents/certificate_ecil.pdf" },
         { label: "View Report", url: "assets/documents/ecil_report.pdf" }
     ],
-    githubRepoUrl: "https://github.com/YourUsername/SHA256-FPGA-Project",
+    githubRepoUrl: "https://github.com/Chitreshsharma23/SHA256-FPGA-UART",
     featured: true
-},,
+},
         {
             title: "Leading Event Media & Student Engagement Strategy",
             shortDescription: "Case study in leadership and digital strategy. As President of the Photography Club and Media Coordinator for a National Hackathon, I directed media coverage for 10+ major events, resulting in a 30% increase in student engagement.",
@@ -94,7 +94,7 @@ const portfolioData = {
 	    links: [
         { label: "View Certificate", url: "assets/documents/Nptel_Python_certificate.pdf"}
     ],
-            githubRepoUrl: "https://github.com/YourUsername/Python-Scripts-Repository",
+            githubRepoUrl: "#",
             featured: false
         }
     ],
