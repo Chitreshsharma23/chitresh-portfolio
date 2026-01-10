@@ -74,6 +74,12 @@ body {
     background-image: linear-gradient(to right, var(--gradient-start), var(--gradient-end));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
+    
+    line-height: 1.4; 
+    padding-bottom: 0.15em; 
+    margin-bottom: -0.1em;
+    display: inline-block; 
 }
 .nav-link.active {
     color: var(--color-accent) !important;
