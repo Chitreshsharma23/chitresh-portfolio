@@ -1,20 +1,18 @@
 /**
  * data.js v3
  * ---
- * JSON-like structure containing all editable content for the portfolio website.
+ * Editable content for the portfolio website.
  */
 
 const portfolioData = {
     personalInfo: {
         name: "Chitresh Sharma",
-        tagline: "Bridging the gap between software logic and silicon performance.",
-        role: "Aspiring VLSI & Embedded Systems Engineer | RTL Design & FPGA Prototyping",
+        tagline: "Combining technical precision in Silicon Design with excellence in People Operations and Leadership.",
+        role: "VLSI & FPGA Engineer | Talent & Operations Leader | B.Tech ECE",
         email: "chitreshsharma2311@gmail.com",
         githubURL: "https://github.com/Chitreshsharma23",
         linkedinURL: "https://www.linkedin.com/in/chitresh-sharma-electronics",
-        // REMOVED: twitterURL
-        
-        // REMOVED: heroCTA and heroSubtext
+
     },
 
     navLinks: [
@@ -26,27 +24,28 @@ const portfolioData = {
     ],
 
     aboutMe: {
-        bioSummary: `I'm Chitresh Sharma, an aspiring **VLSI and Embedded Systems Engineer** dedicated to creating robust and efficient hardware solutions. My technical expertise lies in **RTL Design (Verilog)**, **FPGA prototyping (Xilinx Vivado)**, and **Embedded C programming**. I am currently pursuing my B.Tech in ECE with a strong academic standing. Beyond the lab, I bring proven leadership from organizing large-scale events and leading media teams, ensuring projects are not just technically sound, but also well-coordinated and impactful.`,
-        keyStats: [
+        bioSummary: `I’m **Chitresh Sharma**, a B.Tech ECE student specializing in **VLSI Design and HR Operations**. During my internship at ECIL, I developed a **SHA-256 hardware core** using **Verilog** and **Xilinx Vivado**, integrating it with **MicroBlaze processors**. Complementing my technical side, I gained corporate experience at **Learning Destiny Pvt. Ltd.**, supporting **talent acquisition** and **team coordination**. I excel at bridging technical precision with structured **people management**, ensuring every project is both technically robust and operationally efficient.`,
+	keyStats: [
             //{ value: "9.24", unit: "CGPA" },
             //{ value: "1 Month", unit: "VLSI Internship" }
         ],
         keySkills: [
-            { name: "VLSI Design", level: 90 },
-            { name: "RTL Design", level: 88 },
-            { name: "Verilog HDL", level: 85 },
-            { name: "FPGA Prototyping", level: 82 },
-            { name: "Embedded C", level: 80 },
-            { name: "Python", level: 75 },
-            { name: "Problem Solving", level: 92 },
+            { name: "RTL Design & Verilog", level: 92 },
+            { name: "FPGA Prototyping (Xilinx Vivado)", level: 88 },
+    	    { name: "Talent Acquisition & Coordination", level: 85 }, 
+    	    { name: "Strategic Communication", level: 90 },           
+    	    { name: "Python & Embedded C", level: 80 },
+    	    { name: "Stakeholder Management", level: 88 },            
+	    { name: "Problem Solving", level: 92 },
             { name: "Team Leadership", level: 88 }
+
         ],
         // NEW: Journey highlights for About Me section
         journeyHighlights: [
             { icon: "circuit-board", title: "VLSI Expertise", description: "1 month implementing cryptographic cores on Xilinx Artix-7 FPGA during a rigorous corporate internship." },
             { icon: "graduation-cap", title: "Academic Excellence", description: "B.Tech in ECE with a 9.24 CGPA, specializing in Electronics & Communication." },
             { icon: "users", title: "Leadership & Strategy", description: "Directed media and coordinated 10+ major campus events, leading to enhanced student engagement." },
-            { icon: "zap", title: "Technical Proficiency", description: "Certified NPTEL Elite Python programmer, proficient in Verilog HDL, Vivado, and Embedded C." }
+            { icon: "briefcase", title: "HR & Operations", description: "Interned at Learning Destiny Pvt. Ltd., driving recruitment cycles, streamlining documentation, and optimizing team coordination processes." }
         ]
     },
 
@@ -101,19 +100,28 @@ const portfolioData = {
 
     achievements: [
         {
-            title: "VLSI Internship Excellence",
+            title: "VLSI Internship",
             organization: "ECIL - Corporate R&D Division",
             description: "Received 'Excellent' rating for implementing SHA-256 cryptographic core on Xilinx Artix-7 FPGA with MicroBlaze integration.",
-            date: "June 2024",
+            date: "July 2025",
             proofType: "Certificate",
             proofUrl: "assets/documents/certificate_ecil.pdf", // Replace with actual certificate link
             iconClass: "award" // Corresponds to lucide-react name, used as a data-attribute for JS to select the correct icon
         },
         {
+    	    title: "HR & Operations Intern", 
+    	    organization: "Learning Destiny Pvt. Ltd.", 
+    	    description: "Supported HR recruitment activities and documentation while coordinating with internal teams to ensure smooth operational communication.", 
+    	    date: "Aug 2025 - Oct 2025", 
+    	    proofType: "Internship Certificate", 
+    	    proofUrl: "assets/documents/LD_Internship_Certificate.pdf", // Update this with your actual file path
+    	    iconClass: "briefcase" // Suggested icon for professional experience
+},
+        {
             title: "Batch Topper - First Rank",
             organization: "Guru Nanak Institutions Technical Campus",
             description: "Achieved First Rank with CGPA of 9.24 out of 60+ students in Electronics and Communication Engineering.",
-            date: "2021-2025",
+            date: "2022-2025",
             proofType: "Academic Transcript",
             proofUrl: "assets/documents/1st_topper_certificate.pdf",
             iconClass: "trophy"
@@ -122,7 +130,7 @@ const portfolioData = {
             title: "NPTEL Elite Certificate - Python",
             organization: "NPTEL (IIT/IISC Initiative)",
             description: "Completed 'The Joy of Computing Using Python' course, ranking in the top 25% of all participants nationwide.",
-            date: "2023",
+            date: "April 2024",
             proofType: "Certificate",
             proofUrl: "assets/documents/Nptel_Python_certificate.pdf",
             iconClass: "star"
@@ -131,7 +139,7 @@ const portfolioData = {
             title: "Best Class Representative Award",
             organization: "ECE Department, GNITC",
             description: "Awarded Best Class Representative among all class representatives for excellence in student coordination and communication.",
-            date: "2023",
+            date: "2024",
             proofType: "Award Certificate",
             proofUrl: "assets/documents/class_representative_certificate.pdf",
             iconClass: "award"
@@ -172,7 +180,14 @@ const portfolioData = {
             clientTitle: "ECE Department, GNITC",
             avatarUrl: "assets/images/avatar-faculty.jpg",
             logoUrl: "assets/images/logo-gintc.png"
-        }
+        },
+        {
+            quote: "Chitresh demonstrated excellent dedication, a positive attitude, and a willingness to learn. His overall work during the HR & Operations internship was rated as excellent.",
+            clientName: "Pranav Chowdary Devabathini",
+            clientTitle: "Co-Founder & CEO, Learning Destiny Pvt. Ltd.",
+            avatarUrl: "assets/images/avatar-pranav.jpg", 
+            logoUrl: "assets/images/logo-learning-destiny.png" 
+}
     ],
     
     isAvailable: true 
